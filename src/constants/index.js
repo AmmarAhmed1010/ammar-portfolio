@@ -26,13 +26,14 @@ import {
 } from "../assets";
 
 export const navLinks = [
+ 
   {
     id: "about",
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -42,19 +43,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "React.js Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Next.js Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Tailwind CSS Specialist",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Component Library Integration",
     icon: creator,
   },
 ];
@@ -198,16 +199,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
+   name: "E-Commerce Website",
+description:
+  "Frontend web application built with Next.js, offering a seamless shopping experience with product browsing, cart management, and responsive UI using modern web technologies.",
+ tags: [
       {
-        name: "react",
+        name: "next",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "responsive",
         color: "green-text-gradient",
       },
       {
@@ -219,20 +220,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
+   name: "Portfolio Website",
+description:
+  "Personal portfolio website showcasing projects and skills with a sleek, modern UI design. Built to highlight frontend expertise using Next.js and smooth animations for enhanced user experience.",
+ tags: [
       {
-        name: "react",
+        name: "next",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "framer-motion",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
@@ -240,20 +241,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
+   name: "World Atlas",
+description:
+  "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
+ tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "rest-api",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "responsive",
         color: "pink-text-gradient",
       },
     ],

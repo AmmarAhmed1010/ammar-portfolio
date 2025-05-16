@@ -45,11 +45,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+     I'm a passionate Frontend Developer specializing in building sleek, performant, and user-focused web applications using modern technologies. I have strong expertise in React, Next.js, TypeScript, and Tailwind CSS, and I love crafting interactive user experiences with Framer Motion.
+
+I work with powerful UI libraries like ShadCN/UI and Aceternity UI to rapidly build and scale beautiful, responsive interfaces. My focus is on clean architecture, reusable components, and smooth animations that bring designs to life.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
