@@ -217,7 +217,7 @@ description:
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://e-commerce-chi-eight-35.vercel.app/",
   },
   {
    name: "Portfolio Website",
@@ -238,7 +238,7 @@ description:
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://romeogfx.vercel.app/",
   },
   {
    name: "World Atlas",
@@ -259,7 +259,7 @@ description:
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://worldatlas-dusky.vercel.app/",
   },
 ];
 
