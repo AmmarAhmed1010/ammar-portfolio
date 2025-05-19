@@ -7,6 +7,12 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
+// template_t9ini42
+
+// service_ywt3qwc
+
+// k-fbA8uDe5wjzOfCk
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,39 +22,60 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!form.name) newErrors.name = "Name is required";
+    if (!form.email) newErrors.email = "Email is required";
+    else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(form.email))
+      newErrors.email = "Email is not valid";
+    if (!form.message) newErrors.message = "Message is required";
+    return newErrors;
+  };
 
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
-
     setForm({
       ...form,
       [name]: value,
     });
+
+    // Clear error for the field as user types
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: undefined,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formErrors = validateForm();
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+      return;
+    }
     setLoading(true);
-
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_ywt3qwc',
+        'template_t9ini42',
+        
+    
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Ammar Ahmed",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "ammar7298@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'k-fbA8uDe5wjzOfCk'
       )
       .then(
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
           setForm({
             name: "",
             email: "",
@@ -58,7 +85,6 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
@@ -90,6 +116,7 @@ const Contact = () => {
               placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
+            {errors.name && <span className='text-red-500'>{errors.name}</span>}
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
@@ -101,6 +128,7 @@ const Contact = () => {
               placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
+            {errors.email && <span className='text-red-500'>{errors.email}</span>}
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
@@ -112,6 +140,7 @@ const Contact = () => {
               placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
+            {errors.message && <span className='text-red-500'>{errors.message}</span>}
           </label>
 
           <button

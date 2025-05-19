@@ -1,3 +1,5 @@
+
+import { desc } from "framer-motion/client";
 import {
   mobile,
   backend,
@@ -21,12 +23,16 @@ import {
   shopify,
   carrent,
   jobit,
+  cont,
+  plumbing,
+  ecom,
   tripguide,
   threejs,
+   // <-- add this
 } from "../assets";
 
 export const navLinks = [
- 
+
   {
     id: "about",
     title: "About",
@@ -199,10 +205,10 @@ const testimonials = [
 
 const projects = [
   {
-   name: "E-Commerce Website",
-description:
-  "Frontend web application built with Next.js, offering a seamless shopping experience with product browsing, cart management, and responsive UI using modern web technologies.",
- tags: [
+    name: "E Commerce Website",
+    description:
+      "Frontend web application built with Next.js, offering a seamless shopping experience with product browsing, cart management, and responsive UI using modern web technologies.",
+    tags: [
       {
         name: "next",
         color: "blue-text-gradient",
@@ -220,10 +226,52 @@ description:
     source_code_link: "https://e-commerce-chi-eight-35.vercel.app/",
   },
   {
-   name: "Portfolio Website",
-description:
-  "Personal portfolio website showcasing projects and skills with a sleek, modern UI design. Built to highlight frontend expertise using Next.js and smooth animations for enhanced user experience.",
- tags: [
+   name: "E commerce Website",
+   description:
+     "Frontend web application built with Next.js, offering a seamless shopping experience with product browsing, cart management, and responsive UI using modern web technologies.",
+   tags: [
+     {
+       name: "nextjs",
+       color: "blue-text-gradient",
+     },
+     {
+       name: "rest-api",
+       color: "green-text-gradient",
+     },
+     {
+       name: "responsive",
+       color: "pink-text-gradient",
+     },
+   ],
+   image: ecom,
+   source_code_link: "https://foreverecommerce-eta.vercel.app/",
+ },
+ {
+   name: "World Atlas",
+   description:
+     "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
+   tags: [
+     {
+       name: "nextjs",
+       color: "blue-text-gradient",
+     },
+     {
+       name: "rest-api",
+       color: "green-text-gradient",
+     },
+     {
+       name: "responsive",
+       color: "pink-text-gradient",
+     },
+   ],
+   image: tripguide,
+   source_code_link: "https://worldatlas-dusky.vercel.app/",
+ },
+  {
+    name: "Portfolio Website",
+    description:
+      "Personal portfolio website showcasing projects and skills with a sleek, modern UI design. Built to highlight frontend expertise using Next.js and smooth animations for enhanced user experience.",
+    tags: [
       {
         name: "next",
         color: "blue-text-gradient",
@@ -240,11 +288,12 @@ description:
     image: jobit,
     source_code_link: "https://romeogfx.vercel.app/",
   },
-  {
-   name: "World Atlas",
-description:
-  "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
- tags: [
+   {
+    name: "Contagious",
+
+    description:
+      "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
+    tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
@@ -258,9 +307,33 @@ description:
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://worldatlas-dusky.vercel.app/",
+    image: cont,
+    source_code_link: "https://contagiouswebsite.vercel.app/",
   },
+   {
+    name: "Plumbing",
+
+    description:
+      "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: plumbing,
+    source_code_link: "https://plumbing-nine.vercel.app/",
+  },
+
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };
