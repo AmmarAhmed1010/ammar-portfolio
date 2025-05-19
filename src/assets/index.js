@@ -26,7 +26,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 
-import plumbing from "./plumbing.png";
+import plumbing from "./plumbing.JPG";
 import ecom from "./ecom.png";
 import cont from "./cont.png";
 import carrent from "./carrent.png";
