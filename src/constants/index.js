@@ -267,71 +267,71 @@ const projects = [
    image: tripguide,
    source_code_link: "https://worldatlas-dusky.vercel.app/",
  },
-  // {
-  //   name: "Portfolio Website",
-  //   description:
-  //     "Personal portfolio website showcasing projects and skills with a sleek, modern UI design. Built to highlight frontend expertise using Next.js and smooth animations for enhanced user experience.",
-  //   tags: [
-  //     {
-  //       name: "next",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "framer-motion",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "tailwind",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: jobit,
-  //   source_code_link: "https://romeogfx.vercel.app/",
-  // },
-  //  {
-  //   name: "Contagious",
+  {
+    name: "Portfolio Website",
+    description:
+      "Personal portfolio website showcasing projects and skills with a sleek, modern UI design. Built to highlight frontend expertise using Next.js and smooth animations for enhanced user experience.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+    source_code_link: "https://romeogfx.vercel.app/",
+  },
+   {
+    name: "Contagious",
 
-  //   description:
-  //     "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "rest-api",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "responsive",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: cont,
-  //   source_code_link: "https://contagiouswebsite.vercel.app/",
-  // },
-  //  {
-  //   name: "Plumbing",
+    description:
+      "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cont,
+    source_code_link: "https://contagiouswebsite.vercel.app/",
+  },
+   {
+    name: "Plumbing",
 
-  //   description:
-  //     "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "rest-api",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "responsive",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: plumbing,
-  //   source_code_link: "https://plumbing-nine.vercel.app/",
-  // },
+    description:
+      "Interactive web application showcasing a dynamic world map with country details and region-based filtering. Built with Next.js, Tailwind CSS, and Framer Motion to deliver a responsive and engaging user experience.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "responsive",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: plumbing,
+    source_code_link: "https://plumbing-nine.vercel.app/",
+  },
 
   
 ];

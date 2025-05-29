@@ -1,12 +1,14 @@
 import React from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tilt from 'react-parallax-tilt';
-import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ProjectCard = ({
   index,
@@ -16,8 +18,25 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const cardRef = React.createRef();
+
+  React.useEffect(() => {
+    const card = cardRef.current;
+
+    ScrollTrigger.batch(card, {
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          stagger: 0.1,
+          ease: "power2.inOut",
+        }),
+    });
+  }, [index]);
+
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div ref={cardRef} className='opacity-0 translate-y-5'>
       <Tilt
         tiltMaxAngleX={45}
         tiltMaxAngleY={45}
@@ -62,7 +81,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
@@ -70,9 +89,7 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
-      </motion.div>
+      <h2 className={styles.sectionHeadText}>Projects.</h2>
 
       <div className='mt-8 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
